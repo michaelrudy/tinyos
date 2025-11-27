@@ -1,9 +1,10 @@
 # Ubuntu 22.04 Hardened Guest OS
 
-Custom Ubuntu 22.04 guest operating system configured with enterprise security hardening and smart card authentication.
+Custom Ubuntu 22.04 guest operating system pre-configured with enterprise security hardening and smart card authentication used for Microsoft Remote Desktop application.
 
 ## Features
 
+- **Microsoft Remote Desktop**: Pinned Azure Virtual Desktop client
 - **DISA STIG Compliance**: Hardened against Defense Information Systems Agency Security Technical Implementation Guide standards
 - **Smart Card Authentication**: CAC/PIV card support enabled
 - **Enterprise Ready**: Suitable for government and high-security environments
