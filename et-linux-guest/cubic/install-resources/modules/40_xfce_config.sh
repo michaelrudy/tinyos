@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+# TO-DO: need to move out the xml stuff into a separate config folder for easier maintenance
+
 echo "=== Configuring XFCE4 kiosk mode ==="
 
 # Create XFCE4 configuration directory for kiosk user
