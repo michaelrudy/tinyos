@@ -31,6 +31,8 @@ chmod 750 /var/log/usbguard
 
 # Create USBGuard whitelist policy
 # Hardware IDs are persistent across reboots and VM instances
+
+# review line 58 because I might not need the additional interfaces for webcam
 tee /etc/usbguard/rules.conf > /dev/null << 'EOF'
 # USBGuard Policy - Whitelist approved devices only
 # Default action for unlisted devices: block
