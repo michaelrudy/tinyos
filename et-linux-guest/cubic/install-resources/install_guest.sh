@@ -38,6 +38,7 @@ run_module "25_usb_whitelist.sh"
 run_module "30_user_setup.sh"
 run_module "35_audio_config.sh"
 run_module "40_xfce_config.sh"
+run_module "45_firefox_avd.sh"
 run_module "50_apply_stig.sh"
 run_module "99_finalize.sh"
 
