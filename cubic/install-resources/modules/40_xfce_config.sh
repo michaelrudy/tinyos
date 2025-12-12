@@ -76,7 +76,7 @@ tee /home/kiosk/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml > /dev/
     </property>
     <property name="plugin-2" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="avd-webclient.desktop"/>
+        <value type="string" value="avd-webclient-edge.desktop"/>
       </property>
     </property>
     <property name="plugin-3" type="string" value="pulseaudio">

@@ -20,7 +20,7 @@ run_module() {
         echo "╚════════════════════════════════════════════════════════════════╝"
         bash "${module_path}"
     else
-        echo "⚠️  Module not found: ${module_path}"
+        echo "Module not found: ${module_path}"
         return 1
     fi
 }
@@ -37,7 +37,8 @@ run_module "10_xfce_desktop.sh"
 run_module "20_smart_card.sh"
 run_module "25_usbguard.sh"
 run_module "30_audio.sh"
-run_module "35_firefox.sh"
+# run_module "35_firefox.sh"
+run_module "36_edge.sh"
 run_module "40_proprietary_debs.sh"
 run_module "50_ansible_stig.sh"
 run_module "99_cleanup.sh"
