@@ -14,21 +14,21 @@ run_module() {
     
     if [[ -f "${module_path}" ]]; then
         echo ""
-        echo "╔════════════════════════════════════════════════════════════════╗"
-        echo "║  Running: ${module}"
-        echo "╚════════════════════════════════════════════════════════════════╝"
+        echo "================================================================="
+        echo "  Running: ${module}"
+        echo "================================================================="
         bash "${module_path}"
     else
-        echo "⚠️  Module not found: ${module_path}"
+        echo " Module not found: ${module_path}"
         return 1
     fi
 }
 
 # Main execution
-echo "╔════════════════════════════════════════════════════════════════╗"
-echo "║  Ubuntu 22.04 Hardened Guest - Installation & Configuration"
-echo "║  Running modular setup..."
-echo "╚════════════════════════════════════════════════════════════════╝"
+echo "================================================================="
+echo "  Ubuntu 22.04 Hardened Guest - Installation & Configuration"
+echo "  Running modular setup..."
+echo "================================================================="
 
 # Run modules in order
 run_module "00_system_prep.sh"
@@ -38,12 +38,13 @@ run_module "25_usb_whitelist.sh"
 run_module "30_user_setup.sh"
 run_module "35_audio_config.sh"
 run_module "40_xfce_config.sh"
-run_module "45_firefox_avd.sh"
-run_module "50_apply_stig.sh"
+# run_module "45_firefox_avd.sh"
+run_module "46_edge_avd.sh"
+# run_module "50_apply_stig.sh"
 run_module "99_finalize.sh"
 
 echo ""
-echo "╔════════════════════════════════════════════════════════════════╗"
-echo "║  ✓ All modules completed successfully"
-echo "║  System ready for reboot"
-echo "╚════════════════════════════════════════════════════════════════╝"
+echo "================================================================="
+echo "  All modules completed successfully"
+echo "  System ready for reboot"
+echo "================================================================="
